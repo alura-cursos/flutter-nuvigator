@@ -39,7 +39,7 @@ A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o po
 **Para executar este projeto você precisa:**
 
 - Ter o [Flutter](https://flutter.dev/docs/get-started/install) instalado na sua máquina
-- Ter algum éditor de códigos ou IDE como o [Android Studio](https://developer.android.com/studio) ou [Intellij Idea](https://www.jetbrains.com/pt-br/idea/download/). 
+- Ter algum editor de códigos ou IDE como o [Android Studio](https://developer.android.com/studio) ou [Intellij Idea](https://www.jetbrains.com/pt-br/idea/download/). 
 
 Caso opte por IDEs como as duas sugeridas acima, o processo de execução do aplicativo funcionará através de um botão de play na parte superior que ambas dispõem. Caso escolha rodar o projeto via linha de comandos, utilize o comando `flutter run`. Lembre-se de antes de executar o comando de navegar até a pasta do projeto antes. 
 
