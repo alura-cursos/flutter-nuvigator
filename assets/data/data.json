@@ -1,0 +1,71 @@
+{
+	"producers": {
+		"manjericao": {
+			"logo": "assets/images/store1.png",
+			"name": "Manjericão",
+			"description": "Produtos orgânicos frescos colhidos todas as manhãs das nossas hortas. Trabalhamos apenas com produtos sem agrotóxicos!",
+			"distance": "10",
+			"packages": [
+				{"title": "Cenouras", "description": "Cesta de cenouras orgânicas frescas direto do produtor.", "price": "12,00", "items":  ["Cenouras"]},
+				{"title": "Sortida", "description": "Cesta de legumes sortida e bem fresquinha, 6 variedades de legumes diferentes!", "price": "35,00", "items":  ["Cenoura", "Batata", "Inhame", "Chuchu", "Beterraba", "Abóbora"]},
+				{"title": "Batatas", "description": "Cesta de batatas: doce, inglesa e baroa!", "price": "15,00", "items":  ["Batatas"]},
+				{"title": "Frutas", "description": "Cesta royal de frutas, 6 tipos de frutas diferentes.", "price": "27,90", "items":  ["Bananas", "Maçãs", "Uvas", "Laranjas", "Acerolas", "Pitangas"]},
+				{"title": "Temperos", "description": "Cesta de temperos nobres. 18 variedades de temperos!", "price": "45,00", "items":  ["Você escolhe"]}
+			]
+		},
+		"agrotoy": {
+			"logo": "assets/images/store2.png",
+			"name": "Agtotoy",
+			"description": "Orgânicos focados no público infantil.",
+			"distance": "2",
+			"packages": [
+				{"title": "Cenouras", "description": "Cesta de mini cenouras orgânicas frescas direto do produtor. A criançada ama!", "price": "22,00","items":  ["Mini cenouras"]},
+				{"title": "Frutas", "description": "Frutas coloridas sem manchas. Banana, maçã e uva verde.", "price": "14,90","items":  ["Bananas", "Maçãs", "Uvas"]}
+			]
+		},
+		"jennyjack": {
+			"logo": "assets/images/store3.png",
+			"name": "Jenny Jack",
+			"description": "Espécies importadas e sabores exóticos!",
+			"distance": "12",
+			"packages": [
+				{"title": "Cenouras", "description": "Cesta de mini cenouras orgânicas frescas.", "price": "20,00","items":  ["Cenouras"]},
+				{"title": "Sortida", "description": "Cesta de legumes sortida e bem fresquinha, 6 variedades de legumes diferentes!", "price": "28,00", "items":  ["Cenoura", "Batata", "Inhame", "Chuchu", "Beterraba", "Abóbora"]},
+				{"title": "Temperos", "description": "Cesta de temperos com 8 variedades!", "price": "30,00", "items":  ["Páprica", "Cominho", "Orégano", "Pimenta do reino", "Pimenta calabresa", "Malagueta", "Sal", "Canela"]}
+			]
+		},
+		"grow": {
+			"logo": "assets/images/store4.png",
+			"name": "Grow",
+			"description": "Vegetais para atacado, vendemos para todos os mercados e deliveries da região!",
+			"distance": "10",
+			"packages": [
+				{"title": "Cenouras", "description": "Cesta de mini cenouras orgânicas frescas. 50kg", "price": "200,00", "items":  ["Cenouras"]},
+				{"title": "Sortida", "description": "Cesta de legumes sortida e bem fresquinha, 20 variedades de legumes diferentes!", "price": "400,00", "items":  ["A consultar"]},
+				{"title": "Temperos", "description": "Cesta de temperos com 100 variedades!", "price": "950,00", "items":  ["A consultar"]},
+				{"title": "Frutas", "description": "Saca de frutas, 6 tipos de frutas diferentes. 20kg", "price": "270,00", "items":  ["Bananas", "Maçãs", "Uvas", "Laranjas", "Acerolas", "Pitangas"]}
+			]
+		},
+		"postager": {
+			"logo": "assets/images/store5.png",
+			"name": "Potager",
+			"description": "Vegetais finos para restaurantes e produção selecionada de alimentos.",
+			"distance": "6",
+			"packages": [
+				{"title": "Abóboras", "description": "Abóboras padrão selecionadas sem manchas. Unidade", "price": "15,00", "items":  ["Abóboras"]},
+				{"title": "Tomates", "description": "Cesta de tomates cereja, 5kg", "price": "40,00", "items":  ["Tomates cereja"]},
+				{"title": "Temperos", "description": "Cesta de temperos com 100 variedades!", "price": "950,00", "items":  ["A consultar"]},
+				{"title": "Frutas", "description": "Saca de frutas, 6 tipos de frutas diferentes. 20kg", "price": "270,00", "items":  ["Bananas", "Maçãs", "Uvas", "Laranjas", "Acerolas", "Pitangas"]}
+			]
+		}
+	},
+	"favorites": ["manjericao", "agrotoy", "jennyjack", "grow", "postager"],
+	"highlights": [
+		{"name": "Pack de frutas", "price": "29,90", "description": "Cesta de frutas frescas", "image": "assets/images/fruits.png"},
+		{"name": "Pack de legumes", "price": "27,90", "description": "Cesta de legumes frescos", "store": "Manjericão", "image": "assets/images/vegetables.png"}
+	],
+	"spotlights": [
+		{"price": "25,90", "description": "Cesta de frutas", "image": "assets/images/fruits.png", "store": "Grow"},
+		{"price": "27,90", "description": "Cesta de legumes", "image": "assets/images/vegetables.png", "store": "Manjericão"}
+	]
+}
