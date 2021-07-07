@@ -6,13 +6,11 @@ App que simula um e-commerce de produtos naturais para o curso de navegação e 
 
 ## 🔨 Funcionalidades do projeto
 
-O app lista cestas, produtores e itens das cestas com imagem, título, descrição e valor. Os dados são obtidos através de um arquivo `json`. Também está implementado um esquema de rotas que funciona com o modelo de pilha e o app dispõe de menu hamburger e várias telas. Tudo isso organizado de maneira facilmente personalizável e reaproveitável através da componentização e separação das responsabilidades entre models, components, screens, repositories e afins.
+O app lista cestas, produtores e itens das cestas com imagem, título, descrição e valor. Os dados são obtidos através de um arquivo `json`. Também está implementado um esquema de rotas que funciona com o modelo de pilha e o app dispõe de menu hamburger e várias telas. Tudo isso organizado, facilmente personalizável e reaproveitável através da componentização e separação das responsabilidades entre models, components, screens, repositories e afins.
 
 ![](ecommerce_orgs.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
-
-**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
 
 - `rootBundle`: leitura de dados vindos de um arquivo json
 - `componentização`: os componentes personalizados do projeto encontram-se na pasta "components"
@@ -22,7 +20,7 @@ O app lista cestas, produtores e itens das cestas com imagem, título, descriç�
  
 ## 📁 Acesso ao projeto
 
-**O acesso ao projeto está separado da seguinte forma:**
+O acesso ao projeto está separado da seguinte forma:
 ```
 start
 ├── aula_1
@@ -32,7 +30,9 @@ start
 └── main
 ```
 
-A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente. A branch main é a final, nela você encontra o código final criado no curso até a aula_4
+A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente. A branch main é a final, nela você encontra o código final criado no curso até a aula_4.
+
+Você pode [baixar](https://github.com/Leomhl/flutter-nuvigator/archive/refs/heads/start.zip) o zip com o código inicial do projeto.
 
 ## 🛠️ Abrir e rodar o projeto
 
