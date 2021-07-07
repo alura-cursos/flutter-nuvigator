@@ -1,6 +1,6 @@
 ![Thumbnail GitHub](thumb.png)
 
-# Ecommerce Orgs
+# E-commerce Orgs
 
 App de simulação de um e-commerce para produtos naturais para o curso de personalização nuvigator no Flutter com Dart.
 
