@@ -1,10 +1,7 @@
-import 'package:nested_nuvigators/screens/display_screen.dart';
-import 'package:nested_nuvigators/screens/input_screen.dart';
-import 'package:nested_nuvigators/screens/one_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:nested_nuvigators/screens/three_screen.dart';
-import 'package:nested_nuvigators/screens/two_screen.dart';
 import 'package:nuvigator/next.dart';
+import 'flows/first_flow/route.dart';
+import 'flows/second_flow/route.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,23 +20,24 @@ class MyApp extends StatelessWidget {
         initialRoute: 'home',
         screenType: materialScreenType,
         routes: [
-          NuRouteBuilder(path: 'home', builder: (_, __, ___) => HomeScreen()),
-          NuRouteBuilder(path: 'one', builder: (_, __, ___) => OneScreen()),
-          NuRouteBuilder(path: 'two', builder: (_, __, ___) => TwoScreen()),
-          NuRouteBuilder(path: 'three', builder: (_, __, ___) => ThreeScreen()),
-          NuRouteBuilder(path: 'input', builder: (_, __, ___) => InputScreen()),
-          NuRouteBuilder(path: 'display', builder: (_, __, ___) => DisplayScreen()),
+          HomeRoute(),
+          FirstFlowRoute(),
+          SecondFlowRoute(),
         ],
       ),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeRoute extends NuRoute {
+  @override
+  String get path => 'home';
 
   @override
-  Widget build(BuildContext context) {
-    final nuvigator = Nuvigator.of(context);
+  ScreenType get screenType => materialScreenType;
+
+  @override
+  Widget build(BuildContext context, NuRouteSettings<Object> settings) {
 
     return Scaffold(
        appBar: AppBar(
@@ -57,14 +55,14 @@ class HomeScreen extends StatelessWidget {
              ),
              ElevatedButton(
                child: Text('Primeiro fluxo'),
-               onPressed: () => nuvigator.open('one'),
+               onPressed: () => nuvigator.open('first-flow'),
              ),
              SizedBox(
                height: 20,
              ),
              ElevatedButton(
                child: Text('Segundo fluxo'),
-               onPressed: () => nuvigator.open('input')
+               onPressed: () => nuvigator.open('second-flow')
              ),
            ],
          ),
