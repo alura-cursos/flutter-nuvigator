@@ -45,7 +45,10 @@ class MenuScreen extends StatelessWidget {
               OrgsMenuCard(
                 text: 'Perfil',
                 icon: Icons.person,
-                action: () => nuvigator.open('profile'),
+                action: () {
+                  nuvigator.open('myapp://profile');
+
+                },
               ),
               Divider(),
               OrgsMenuCard(
