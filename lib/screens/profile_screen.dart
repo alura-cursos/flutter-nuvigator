@@ -30,11 +30,11 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                     IconButton(
-                      color: Colors.transparent,
-                      icon: Icon(Icons.menu, color: AppColors.green), // set your color here
-                      onPressed: () {
-                        _scaffoldKey.currentState.openDrawer();
-                      }
+                        color: Colors.transparent,
+                        icon: Icon(Icons.menu, color: AppColors.green), // set your color here
+                        onPressed: () {
+                          _scaffoldKey.currentState.openDrawer();
+                        }
                     ),
                   ]
               ),
@@ -43,48 +43,48 @@ class ProfileScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
-                    children: [
-                      Container(
-                        width: 100,
-                        height: 100,
-                        child: Stack(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Image.asset(
-                                AppImages.person,
-                                width: 80,
-                              ),
-                            ),
-                            Positioned(
-                              bottom: 4,
-                              right: 10,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: AppColors.green,
-                                  borderRadius: BorderRadius.circular(20),
+                      children: [
+                        Container(
+                          width: 100,
+                          height: 100,
+                          child: Stack(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: Image.asset(
+                                  AppImages.person,
+                                  width: 80,
                                 ),
-                                child: Icon(
-                                  Icons.enhance_photo_translate,
-                                  color: Colors.white,
-                                  size: 20,
-                                ),
-                                width: 30,
-                                height: 30,
                               ),
-                            )
-                          ],
+                              Positioned(
+                                bottom: 4,
+                                right: 10,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: AppColors.green,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child: Icon(
+                                    Icons.enhance_photo_translate,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  width: 30,
+                                  height: 30,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      SizedBox(width: 15),
-                      Text(
-                        'Leonardo Alurano',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w700,
+                        SizedBox(width: 15),
+                        Text(
+                          'Leonardo Alurano',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
-                      ),
-                    ]
+                      ]
                   ),
                   SizedBox(height: 30),
                   Text(

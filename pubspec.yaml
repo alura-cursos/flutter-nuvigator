@@ -19,6 +19,7 @@ dependencies:
     git:
       url: https://github.com/bhavin-concetto/smoothratingbar.git
       ref: dev
+  nuvigator:
 
 dev_dependencies:
   flutter_test:

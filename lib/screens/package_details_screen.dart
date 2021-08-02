@@ -74,8 +74,8 @@ class PackageDetailsScreen extends StatelessWidget {
                 Text(
                   producer.name,
                   style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 18
+                      fontWeight: FontWeight.w400,
+                      fontSize: 18
                   ),
                 ),
               ],
@@ -129,7 +129,7 @@ class PackageDetailsScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(20, 5, 20, 0),
                 child: ListView(
-                  children: _generatePackageItems(package)
+                    children: _generatePackageItems(package)
                 ),
               )
           ),
@@ -143,11 +143,11 @@ class PackageDetailsScreen extends StatelessWidget {
 
     for(final item in package.items) {
       children.add(
-        OrgsPackagesCard(
-          description: "",
-          title: item,
-          price: null
-      ));
+          OrgsPackagesCard(
+              description: "",
+              title: item,
+              price: null
+          ));
     }
 
     return children;

@@ -11,24 +11,24 @@ class PaymentScreen extends StatelessWidget {
     return Scaffold(
         drawer: OrgsDrawer(),
         appBar: AppBar(
-        iconTheme: IconThemeData(
-          color: AppColors.green, //change your color here
-        ),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(30),
+          iconTheme: IconThemeData(
+            color: AppColors.green, //change your color here
           ),
-        ),
-        backgroundColor: Colors.white,
-        title: Text(
-          'Pagamento',
-          style: TextStyle(
-            color: AppColors.darkGrey,
-            fontWeight: FontWeight.w700
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(30),
+            ),
           ),
+          backgroundColor: Colors.white,
+          title: Text(
+            'Pagamento',
+            style: TextStyle(
+                color: AppColors.darkGrey,
+                fontWeight: FontWeight.w700
+            ),
+          ),
+          centerTitle: true,
         ),
-        centerTitle: true,
-      ),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,15 +50,15 @@ class PaymentScreen extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 10
+                    horizontal: 20,
+                    vertical: 10
                 ),
                 child: Text(
                   'Formas de pagamento cadastradas',
                   style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 16,
-                    color: AppColors.darkGrey
+                      fontWeight: FontWeight.w400,
+                      fontSize: 16,
+                      color: AppColors.darkGrey
                   ),
                 ),
               ),

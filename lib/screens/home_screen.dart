@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nuvigator/next.dart';
 import 'package:proj/components/orgs_highlights_card.dart';
 import 'package:proj/components/orgs_cards_list.dart';
 import 'package:proj/components/orgs_search_bar.dart';
@@ -9,6 +10,7 @@ import 'package:proj/core/app_colors.dart';
 import 'package:proj/core/app_images.dart';
 import 'package:proj/models/producer_model.dart';
 import 'package:proj/repository/data.dart';
+import 'package:proj/screens/producer_details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -133,17 +135,14 @@ class _HomeScreenState extends State<HomeScreen> {
     List<Widget> children = [];
     final data = await Data.getJson();
     final producers = data["producers"];
+    final nuvigator = Nuvigator.of(context);
 
     for(final producer in producers.keys) {
 
       final prod = Producer.fromJson(producers[producer]);
 
       children.add(OrgsStoresCard(
-        action: () =>  Navigator.pushNamed(
-            context,
-            'producer-details',
-            arguments: prod
-        ),
+        action: () =>  nuvigator.open('producer-details', parameters: {"producer": prod}),
         img: prod.logo,
         distance: prod.distance,
         title: prod.name,
