@@ -1,18 +1,22 @@
 ![Thumbnail GitHub](thumb.png)
 
-# Rotas app
+# E-commerce Orgs
 
-App que simula um fluxo de telas para o curso de navegação e rotas com nuvigator através do Flutter e Dart.
+App que simula um e-commerce de produtos naturais para o curso de navegação e rotas com nuvigator através do Flutter e Dart.
 
 ## 🔨 Funcionalidades do projeto
 
-Este projeto cria uma rede de páginas interligadas que utilizaremos para implementar um fluxo aninhado de rotas e navegação
+O app lista cestas, produtores e itens das cestas com imagem, título, descrição e valor. Os dados são obtidos através de um arquivo `json`. Também está implementado um esquema de rotas que funciona com o modelo de pilha e o app dispõe de menu hamburger e várias telas. Tudo isso organizado, facilmente personalizável e reaproveitável através da componentização e separação das responsabilidades entre models, components, screens, repositories e afins.
 
 ![](ecommerce_orgs.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-- `nuvigator` Utilizamos neste projeto uma biblioteca chamada [nuvigator](https://github.com/nubank/nuvigator) que nos possibilita manipular o fluxos das rotas, parâmetros, navegação aninhada e afins.
+- `rootBundle`: leitura de dados vindos de um arquivo json
+- `componentização`: os componentes personalizados do projeto encontram-se na pasta "components"
+- `centralização de cores`: todas as cores utilizadas no app vêm de um arquivo chamado app_colors que aumenta o poder de personalização sem grande impacto na lógica do código.
+- `centralização de imagens`: todas as imagens utilizadas no app vêm de um arquivo chamado app_images que aumenta o poder de personalização sem grande impacto na lógica do código.
+- `nuvigator` nas branches a partir da aula_2 utilizamos uma biblioteca chamada [nuvigator](https://github.com/nubank/nuvigator) que nos possibilita manipular o fluxos das rotas, parâmetros, navegação aninhada e afins.
  
 ## 📁 Acesso ao projeto
 
@@ -23,10 +27,11 @@ start
 ├── aula_2
 ├── aula_3
 ├── start_nested
-└── aula_4
+├── aula_4
+└── main
 ```
 
-A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente.
+A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente. A branch main é a final, nela você encontra o código final criado no curso até a aula_4.
 
 Você pode [baixar](https://github.com/Leomhl/flutter-nuvigator/archive/refs/heads/start.zip) o zip com o código inicial do projeto.
 
