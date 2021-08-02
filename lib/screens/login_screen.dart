@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
                       width: double.infinity
                   ),
                   child: ElevatedButton(
-                    onPressed: () => onHomeClick,
+                    onPressed: onHomeClick,
                     style: ElevatedButton.styleFrom(
                       primary: AppColors.green, // background
                       onPrimary: Colors.white, // foreground
@@ -80,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                   vertical: 10,
                 ),
                 child: GestureDetector(
-                  onTap: () => onSingUpClick,
+                  onTap: onSingUpClick,
                   child: Container(
                     width: double.maxFinite,
                     padding: const EdgeInsets.all(8),

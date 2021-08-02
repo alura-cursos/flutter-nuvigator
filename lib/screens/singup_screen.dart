@@ -98,7 +98,7 @@ class SingupScreen extends StatelessWidget {
                   vertical: 10,
                 ),
                 child: GestureDetector(
-                  onTap: () => onLoginClick,
+                  onTap: onLoginClick,
                   child: Container(
                     width: double.maxFinite,
                     padding: const EdgeInsets.all(8),

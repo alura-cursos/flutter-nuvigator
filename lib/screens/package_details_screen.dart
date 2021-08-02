@@ -6,7 +6,7 @@ import 'package:proj/models/package_model.dart';
 import 'package:proj/models/producer_model.dart';
 
 class PackageDetailsScreen extends StatelessWidget {
-
+  
   final Package package;
   final Producer producer;
 

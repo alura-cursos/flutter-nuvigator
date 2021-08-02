@@ -4,7 +4,7 @@ import 'package:proj/screens/favorites_screen.dart';
 
 class FavoriteRoute extends NuRoute {
   @override
-  String get path => 'favorite';
+  String get path => 'favorites';
 
   @override
   ScreenType get screenType => materialScreenType;
