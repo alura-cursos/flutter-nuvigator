@@ -8,7 +8,7 @@ App que simula um fluxo de telas para o curso de navegação e rotas com nuvigat
 
 Este projeto cria uma rede de páginas interligadas que utilizaremos para implementar um fluxo aninhado de rotas e navegação
 
-![](fluxo.gif)
+![](ecommerce_orgs.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
@@ -23,11 +23,10 @@ start
 ├── aula_2
 ├── aula_3
 ├── start_nested
-├── aula_4
-└── main
+└── aula_4
 ```
 
-A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente. A branch main é a final, nela você encontra o código final criado no curso até a aula_4.
+A branch [start](https://github.com/Leomhl/flutter-nuvigator/tree/start) é o ponto de partida do repositório, é partindo dela que desenvolveremos a aula_1. Por sua vez, a aula_2 é uma continuação da aula_1 e assim vai sucessivamente.
 
 Você pode [baixar](https://github.com/Leomhl/flutter-nuvigator/archive/refs/heads/start.zip) o zip com o código inicial do projeto.
 
