@@ -78,14 +78,13 @@ class FavoritesScreen extends StatelessWidget {
     List<Widget> children = [];
     final data = await Data.getJson();
     final producers = data["producers"];
-    final nuvigator = Nuvigator.of(context);
 
     for(final producer in producers.keys) {
 
       final prod = Producer.fromJson(producers[producer]);
 
       children.add(OrgsStoresCard(
-        action: () => nuvigator.open('producer-details', parameters: {"producer": prod}),
+        action: () => onProducerDetailsClick({"producer": prod}),
         img: prod.logo,
         distance: prod.distance,
         title: prod.name,
