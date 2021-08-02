@@ -9,7 +9,6 @@ import 'package:proj/core/app_colors.dart';
 import 'package:proj/core/app_images.dart';
 import 'package:proj/models/producer_model.dart';
 import 'package:proj/repository/data.dart';
-import 'package:proj/screens/producer_details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -49,9 +48,9 @@ class _HomeScreenState extends State<HomeScreen> {
               Text(
                 'Olá, Leonardo',
                 style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w700,
-                  color: AppColors.darkGrey
+                    fontSize: 26,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.darkGrey
                 ),
               ),
               SizedBox(height: 10),
@@ -114,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 future: _generateProducerList(context),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
-                     return Column(children: snapshot.data);
+                    return Column(children: snapshot.data);
                   } else {
                     return Center(
                       child: CircularProgressIndicator(),
@@ -140,9 +139,10 @@ class _HomeScreenState extends State<HomeScreen> {
       final prod = Producer.fromJson(producers[producer]);
 
       children.add(OrgsStoresCard(
-        action: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => ProducerDetailsScreen(producer: prod)),
+        action: () =>  Navigator.pushNamed(
+            context,
+            'producer-details',
+            arguments: prod
         ),
         img: prod.logo,
         distance: prod.distance,
@@ -172,8 +172,8 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     return OrgsCardsList(
-      heightList: 160,
-      cards: children
+        heightList: 160,
+        cards: children
     );
   }
 
@@ -185,11 +185,11 @@ class _HomeScreenState extends State<HomeScreen> {
     for(final spotlight in spotlights) {
 
       children.add(OrgsSpotlightCard(
-        img: spotlight["image"],
-        price: spotlight["price"],
-        description: spotlight["description"],
-        color: AppColors.frostMint,
-        store: spotlight["store"]
+          img: spotlight["image"],
+          price: spotlight["price"],
+          description: spotlight["description"],
+          color: AppColors.frostMint,
+          store: spotlight["store"]
       ));
     }
 
